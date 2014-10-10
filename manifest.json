@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+
+	"name": "Ass-mar",
+	"description": "An extension that replaces all occurences of 'asthma' to 'ass-mar'.",
+	"version": "1.0.0",
+
+	"content_scripts": [{
+		"matches": ["*://*/*"],
+		"js": ["build/scripts/main.min.js"],
+		"run_at": "document_end"
+	}]
+}
